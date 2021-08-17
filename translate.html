@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1>My Web Page</h1>
+<p>Hello everybody!</p>
+<p>Translate this page:</p>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+   }
+</script>
+<script type="text/javascript"
+   src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<p>You can translate the content of this page by selecting a language in the select box.</p>
+<div class="flag">
+   <a href="#" class="flag_link eng" data-lang="en">Eng<img class="img-fluid" src="./img/flag-eng.png" alt=""></a>
+   <a href="#" class="flag_link zh-Hant" data-lang="zh-Hant">Chineză<img class="img-fluid" src="./img/flag-zh-Hant.png" alt=""></a>
+   <a href="#" class="flag_link fr" data-lang="fr">FR<img class="img-fluid" src="./img/flag-rus.png" alt=""></a>
+</div>
+    <script src="js/translate.js"></script>
+</body>
+</html>
